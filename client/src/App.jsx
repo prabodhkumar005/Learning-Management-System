@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/Login.jsx";
+import Navbar from "./components/Navbar.jsx";
  
 
 const appRouter = createBrowserRouter([
@@ -14,7 +15,9 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <main>
-      <RouterProvider router={appRouter} />
+      {/* <Navbar/>   */}
+      {/* <RouterProvider router={appRouter} /> */}
+      <Login/>
     </main>
   );
 }

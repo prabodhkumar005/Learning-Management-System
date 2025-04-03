@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import rootReducer from "./rootReducer"; // Correct the spelling here
-import { authApi } from "@/features/api/authApi"; // Ensure alias is correct
+import rootReducer from "./rootReducer"; 
+import { authApi } from "@/features/api/authApi";
 
 export const appStore = configureStore({
   reducer: rootReducer,
