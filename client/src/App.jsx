@@ -1,27 +1,36 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Login from "./pages/Login.jsx";
-import Navbar from "./components/Navbar.jsx";
+import MainLayout from "./layout/MainLayout.jsx";
+import HeroSection from "./pages/student/HeroSection.jsx";
 
 // Define your router configuration
-// const appRouter = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Login />
-//   },
-//   {
-//     path:"/navbar",
-//     element:<Navbar /> 
-//   },
-// ]);
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <>
+            <HeroSection />
+            {/* <Courses /> */}
+          </>
+        ),
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
     <main>
-      /* <Navbar />  
-      {/* Wrap the routing provider around the rest of the app */}
-      {/* <RouterProvider router={appRouter} />  */}
-      <Login/>
+      <RouterProvider router={appRouter} />
     </main>
   );
 }

@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 // import DarkMode from "@/DarkMode";
 
-// import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useLogoutUserMutation } from "@/features/api/authApi";
 import { toast } from "sonner";
 import { useSelector } from "react-redux";
@@ -21,7 +21,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const { user } = useSelector((store) => store.auth);
   const [logoutUser, { data, isSuccess }] = useLogoutUserMutation();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const logoutHandler = async () => {
     await logoutUser();
   };
@@ -29,7 +29,7 @@ const Navbar = () => {
   useEffect(() => {
     if (isSuccess) {
       toast.success(data?.message || "User log out.");
-      // navigate("/login");
+       navigate("/login");
     }
   }, [isSuccess]);
 
@@ -39,12 +39,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto hidden md:flex justify-between items-center gap-10 h-full">
         <div className="flex items-center gap-2">
           <School size={"30"} />
-        
+          <Link to="/">
             <h1 className="hidden md:block font-extrabold text-2xl">
               E-Learning
             </h1>
-            {/* <Link to="/">
-          </Link> */}
+            
+          </Link>
         </div>
         {/* User icons and dark mode icon  */}
         <div className="flex items-center gap-8">

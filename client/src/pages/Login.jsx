@@ -39,7 +39,7 @@ const Login = () => {
     { data: loginData, error: loginError, isLoading: loginIsLoading, isSuccess: loginIsSuccess },
   ] = useLoginUserMutation();
 
-  // const navigate = useNavigate();
+   const navigate = useNavigate();
 
   const validateInputs = (type) => {
     let newErrors = {};
