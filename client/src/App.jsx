@@ -6,6 +6,10 @@ import HeroSection from "./pages/student/HeroSection.jsx";
 import Courses from "./pages/student/Courses.jsx";
 import MyLearning from "./pages/student/MyLearning.jsx";
 import Profile from "./pages/student/Profile";
+import Dashboard from "./pages/admin/Dashboard";
+import CourseTable from "./pages/admin/course/CourseTable";
+import Sidebar from "./pages/admin/Sidebar";
+import AddCourse from "./pages/admin/course/AddCourse";
 
 // Define your router configuration
 const appRouter = createBrowserRouter([
@@ -34,6 +38,24 @@ const appRouter = createBrowserRouter([
         path: "profile",
         element: <Profile />
       },
+      {
+        path:"admin",
+        element:<Sidebar/>,
+        children:[
+          {
+            path:"dashboard",
+            element:<Dashboard/>
+          },
+          {
+            path:"course",
+            element:<CourseTable/>
+          },
+          {
+            path:"course/create",
+            element:<AddCourse/>
+          },
+        ]
+      }
     ],
   },
 ]);
