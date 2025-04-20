@@ -3,7 +3,7 @@ import "./App.css";
 import Login from "./pages/Login.jsx";
 import MainLayout from "./layout/MainLayout.jsx";
 import HeroSection from "./pages/student/HeroSection.jsx";
-import Courses from "./pages/student/Courses.jsx";
+import Course from "./pages/student/Course.jsx";
 import MyLearning from "./pages/student/MyLearning.jsx";
 import Profile from "./pages/student/Profile";
 import Dashboard from "./pages/admin/Dashboard";
@@ -11,6 +11,9 @@ import CourseTable from "./pages/admin/course/CourseTable";
 import Sidebar from "./pages/admin/Sidebar";
 import AddCourse from "./pages/admin/course/AddCourse";
 import EditCourse from "./pages/admin/course/EditCourse";
+import CourseDetails from "./pages/student/CourseDetails";
+import Quiz from "./pages/student/Quiz";
+import SearchResults from "./pages/student/SearchResult";
 
 // Define your router configuration
 const appRouter = createBrowserRouter([
@@ -23,9 +26,17 @@ const appRouter = createBrowserRouter([
         element: (
           <>
             <HeroSection />
-            <Courses />
+            <Course />
           </>
         ),
+      },
+      {
+        path:"/course/:id" ,
+        element:<CourseDetails />
+      },
+      {
+        path:"/course/search",
+         element:<SearchResults />
       },
       {
         path: "login",
@@ -34,6 +45,10 @@ const appRouter = createBrowserRouter([
       {
         path: "my-learning",
         element: <MyLearning />
+      },
+      {
+        path: "quiz",
+        element: <Quiz />
       },
       {
         path: "profile",

@@ -50,7 +50,7 @@ const Navbar = () => {
           <School size={"30"} />
           <Link to="/">
             <h1 className="hidden md:block font-extrabold text-2xl">
-              E-Learning
+              E-Pathshala
             </h1>
           </Link>
         </div>
@@ -76,6 +76,9 @@ const Navbar = () => {
                     <Link to="my-learning">My learning</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
+                    <Link to="quiz">Practice Quiz</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
                     {" "}
                     <Link to="profile">Edit Profile</Link>{" "}
                   </DropdownMenuItem>
@@ -83,7 +86,7 @@ const Navbar = () => {
                     Log out
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
-                {user?.role === "instructor" && (
+                {user?.role === "instructor" || user?.role === "student" && (
                   <>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem><Link to="/admin/dashboard">Dashboard</Link></DropdownMenuItem>
@@ -135,10 +138,12 @@ const MobileNavbar = ({ user }) => {
         <Separator className="mr-2" />
         <nav className="flex flex-col space-y-4">
           <Link to="/my-learning">My Learning</Link>
+          <Link to="quiz">Practice Quiz</Link>
           <Link to="/profile">Edit Profile</Link>
           <p>Log out</p>
         </nav>
-        {user?.role === "instructor" && (
+        {user?.role === "instructor" || user?.role === "student"
+ && (
           <SheetFooter>
             <SheetClose asChild>
               <Button type="submit" onClick={() => navigate("/admin/dashboard")}>Dashboard</Button>
