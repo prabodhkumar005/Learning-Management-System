@@ -34,11 +34,14 @@ const CourseDetails = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Course Video"
+                src={course.videoUrl}
+                title={course.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
+
             <button className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition">
               Purchase Now
             </button>

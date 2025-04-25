@@ -5,6 +5,7 @@ const courses = [
       instructor: "Prabodh Kumar",
       price: 4999,
       thumbnail: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhY3QlMjBqc3xlbnwwfHwwfHx8MA%3D%3D",
+      videoUrl: "https://www.youtube.com/embed/vz1RlUyrc3w"
     },
     {
       id: 2,
@@ -12,12 +13,14 @@ const courses = [
       instructor: "Priya Sharma",
       price: 5999,
       thumbnail: "https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D",
+       videoUrl: "https://www.youtube.com/embed/ajdRvxDWH4w?si=309KlI6aqBRChb4c"
     },
     {
       id: 3,
       title: "UI/UX Design Principles",
       instructor: "Anjali Mehra",
       price: 3999,
+      videoUrl: "https://www.youtube.com/embed/O5IXf8qB9U4?si=cmaEnMUb_fVC3Imx",
       thumbnail: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dWklMkZ1eHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
@@ -25,6 +28,7 @@ const courses = [
       title: "Node.js Backend Development",
       instructor: "Anukalp Raj",
       price: 6999,
+      videoUrl: "https://www.youtube.com/embed/ZLxOUw2ougo?si=qbGPqtT7SAb5XeHU",
       thumbnail: "https://media.istockphoto.com/id/1347542592/photo/node-js-inscription-against-laptop-and-code-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=SacKSD7fEYyWEqaXXagsWO0nPPtel7PRmhMAB0Tp7h8=",
     },
     {
@@ -32,6 +36,7 @@ const courses = [
       title: "Python for Data Science",
       instructor: "Sneha Reddy",
       price: 7999,
+      videoUrl: "https://www.youtube.com/embed/x7ULDYs4X84?si=NSVQc9vAhilIRo5J",
       thumbnail: "https://media.istockphoto.com/id/2179686860/photo/python-pytorch-and-tensorflow-are-programming-languages-for-machine-learning.webp?a=1&b=1&s=612x612&w=0&k=20&c=7_gnQrJevvVjyGgjHqqPGKKQe15CIDeQqG0WGuSDfV4=",
     },
     {
@@ -39,6 +44,7 @@ const courses = [
       title: "Intro to Machine Learning",
       instructor: "Karan Malhotra",
       price: 8999,
+      videoUrl: "https://www.youtube.com/embed/2oGsCHlfBUg?si=o7DL1sR2wNJVIWGT",
       thumbnail: "https://media.istockphoto.com/id/1387900612/photo/automation-data-analytic-with-robot-and-digital-visualization-for-big-data-scientist.webp?a=1&b=1&s=612x612&w=0&k=20&c=2iILS0WPh_D-MDMJiIw_14bg6IgJarMUYtDH4D0nIho=",
     },
     {
@@ -46,6 +52,7 @@ const courses = [
       title: "Web Design Fundamentals",
       instructor: "Pooja Nair",
       price: 4499,
+      videoUrl: "https://www.youtube.com/embed/O5IXf8qB9U4?si=cmaEnMUb_fVC3Imx",
       thumbnail: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dWklMkZ1eHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
@@ -53,6 +60,7 @@ const courses = [
       title: "DevOps Essentials",
       instructor: "Pramod Jadhav",
       price: 5499,
+      videoUrl: "https://www.youtube.com/embed/lGg3VF2RScI?si=-pHGQZelG3V_IRu6",
       thumbnail: "https://media.istockphoto.com/id/1435212834/photo/devops-software-development-operations-programmer-administration-system-life-cycle-quality.webp?a=1&b=1&s=612x612&w=0&k=20&c=2BmXzn7hR98y3MniPHqJG5w_Q0pqqJucHGC7JsTP6j8=",
     },
     {
@@ -60,6 +68,7 @@ const courses = [
       title: "C++ Programming",
       instructor: "Arjun Patel",
       price: 3999,
+      videoUrl: "https://www.youtube.com/embed/e7sAf4SbS_g?si=57rWj_kF99CQ7fdA",
       thumbnail: "https://media.istockphoto.com/id/1486662537/photo/c-programming-language-for-mobile-development-concept-smartphone-on-the-laptop-keyboard-the.webp?a=1&b=1&s=612x612&w=0&k=20&c=Bbc7ushhPMOVaR9qHDa-0FkchHFXzet900Wuc-GE9HY=",
     },
     {
@@ -67,6 +76,7 @@ const courses = [
       title: "Cybersecurity Basics",
       instructor: "Meena D'Souza",
       price: 6499,
+      videoUrl: "https://www.youtube.com/embed/FARSxWjlPkk?si=1ed8kr8ps9op3vER",
       thumbnail: "https://media.istockphoto.com/id/1777088857/photo/digital-security-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZZS0p9fbcn-KXSX19EYbntNRFcwvXtU2fTWZUEwQIyc=",
     },
     {
@@ -74,6 +84,7 @@ const courses = [
       title: "Ethical Hacking",
       instructor: "Manish Kapoor",
       price: 7499,
+      videoUrl: "https://www.youtube.com/embed/FARSxWjlPkk?si=1ed8kr8ps9op3vER",
       thumbnail: "https://media.istockphoto.com/id/1157124920/photo/a-hacker-or-cracker-tries-to-hack-a-security-system-to-steal-or-destroy-critical-information.webp?a=1&b=1&s=612x612&w=0&k=20&c=S3wuiuAZ0iq3ZQcQBS49j4jL9o3QuXhzEQFiQbqBBKM=",
     },
     {
@@ -81,6 +92,7 @@ const courses = [
       title: "Android App Development",
       instructor: "Nikita Yadav",
       price: 6999,
+      videoUrl: "https://www.youtube.com/embed/bTjOfVePvFw?si=EIK1UXzbHqKHNar6",
       thumbnail: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5kcm9pZCUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
     },
     {
@@ -88,6 +100,7 @@ const courses = [
       title: "iOS Development with Swift",
       instructor: "Devansh Iyer",
       price: 7999,
+      videoUrl: "https://www.youtube.com/embed/bTjOfVePvFw?si=EIK1UXzbHqKHNar6",
       thumbnail: "https://media.istockphoto.com/id/1342009126/photo/businessman-holding-a-mobile-smartphone-with-white-blank-screen-with-space-for-text.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZbtUy5MZDyl8DQY5ohw3MHSy4WNtezJBZtU-rPtiokY=",
     },
     {
@@ -95,6 +108,7 @@ const courses = [
       title: "Cloud Computing Basics",
       instructor: "Ritika Jain",
       price: 8499,
+      videoUrl: "https://www.youtube.com/embed/dmGybCohHsw?si=ZklTIHwConxcz2iZ",
       thumbnail: "https://media.istockphoto.com/id/1684307985/photo/serverless-computing.webp?a=1&b=1&s=612x612&w=0&k=20&c=8Z6HQ6KYsWVvgmNVv-jPGt_vSm1eov9Cj5EF-_5YtUM=",
     },
     {
@@ -102,6 +116,7 @@ const courses = [
       title: "Kubernetes for Developers",
       instructor: "Siddharth Rao",
       price: 9299,
+      videoUrl: "https://www.youtube.com/embed/rBeyHDKLVqM?si=bYRejdUtzk32DfH8",
       thumbnail: "https://media.istockphoto.com/id/1684307985/photo/serverless-computing.webp?a=1&b=1&s=612x612&w=0&k=20&c=8Z6HQ6KYsWVvgmNVv-jPGt_vSm1eov9Cj5EF-_5YtUM=",
     },
     {
@@ -109,6 +124,7 @@ const courses = [
       title: "Blockchain Fundamentals",
       instructor: "Tanvi Bhatt",
       price: 7599,
+      videoUrl: "https://www.youtube.com/embed/6aF6p2VUORE?si=HZe_owRiIr40MoHP",
       thumbnail: "https://media.istockphoto.com/id/1349092555/photo/businessman-using-a-computer-to-blockchain-technology-concept-with-a-chain-of-encrypted.webp?a=1&b=1&s=612x612&w=0&k=20&c=d6lxhmC81gNg2Ap5ga9Cyrg3m5Ho3nkdKoBxAFtHn-M=",
     },
     
