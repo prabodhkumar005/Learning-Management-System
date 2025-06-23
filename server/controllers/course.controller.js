@@ -9,13 +9,11 @@ export const createCourse = async (req,res) => {
                 message:"Course title and category is required."
             })
         }
-
         const course = await Course.create({
             courseTitle,
             category,
             creator:req.id
         });
-
         return res.status(201).json({
             course,
             message:"Course created."

@@ -142,7 +142,7 @@ const MobileNavbar = ({ user }) => {
           <Link to="/profile">Edit Profile</Link>
           <p>Log out</p>
         </nav>
-        {user?.role === "instructor" || user?.role === "student"
+        {user?.role === "instructor"
  && (
           <SheetFooter>
             <SheetClose asChild>
